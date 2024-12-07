@@ -63,48 +63,48 @@
  // 1 тапшырма
 
 
-// const users = [
-//     { name: "Nurzada", age: 17, region: "jalal-abad" },
-//     { name: "Bahrom", age: 21, region: "jalal-abad" },
-//     { name: "Elita", age: 20, region: "Osh" },
-//     { name: "Tilek", age: 16, region: "Chui" },
-//     { name: "Bekbolsun", age: 14, region: "Osh" },
-//     { name: "Yrys", age: 19, region: "osh" },
-//     { name: "bekmyrza", age: 16, region: "Batken" },
-//     { name: "Aichurok", age: 19, region: "Naryn" },
-//     { name: "Urmat", age: 18, region: "Yssyk-Kol" },
-//     { name: "Aitenir", age: 18, region: "Yssyk-Kol" },
-//     { name: "Bekzat", age: 18, region: "Yssyk-Kol" },
-//     { name: "Adil", age: 16, region: "Chui" },
-// ];
+const users = [
+    { name: "Nurzada", age: 17, region: "jalal-abad" },
+    { name: "Bahrom", age: 21, region: "jalal-abad" },
+    { name: "Elita", age: 20, region: "Osh" },
+    { name: "Tilek", age: 16, region: "Chui" },
+    { name: "Bekbolsun", age: 14, region: "Osh" },
+    { name: "Yrys", age: 19, region: "osh" },
+    { name: "bekmyrza", age: 16, region: "Batken" },
+    { name: "Akylai", age: 19, region: "Naryn" },
+    { name: "Urmat", age: 18, region: "Yssyk-Kol" },
+    { name: "Aitenir", age: 18, region: "Yssyk-Kol" },
+    { name: "Bekzat", age: 18, region: "Yssyk-Kol" },
+    { name: "Adil", age: 16, region: "Chui" },
+];
 
 
-// const userQuery = prompt("что вы хотите у меня спросить");
+const userQuery = prompt("что вы хотите у меня спросить");
 
 
-// let filteredUsers;
+let filteredUsers;
 
 
-// if (userQuery.endsWith('+')) {
-//     const age = parseInt(userQuery.slice(0, -1)); 
-//     filteredUsers = users.filter(user => user.age > age);
-// } 
+if (userQuery.endsWith('+')) {
+    const age = parseInt(userQuery.slice(0, -1)); 
+    filteredUsers = users.filter(user => user.age > age);
+} 
 
-// else if (userQuery.endsWith('-')) {
-//     const age = parseInt(userQuery.slice(0, -1)); 
-//     filteredUsers = users.filter(user => user.age <= age);
-// } 
+else if (userQuery.endsWith('-')) {
+    const age = parseInt(userQuery.slice(0, -1)); 
+    filteredUsers = users.filter(user => user.age <= age);
+} 
 
-// else {
-//     filteredUsers = users.filter(user => user.region.toLowerCase() === userQuery.toLowerCase());
-// }
+else {
+    filteredUsers = users.filter(user => user.region.toLowerCase() === userQuery.toLowerCase());
+}
 
 
-// if (filteredUsers && filteredUsers.length > 0) {
-//     console.log(`"${userQuery}":`, filteredUsers);
-// } else {
-//     alert(` вы наверное не правильно писали  "${userQuery}".`);
-// } 
+if (filteredUsers && filteredUsers.length > 0) {
+    console.log(`"${userQuery}":`, filteredUsers);
+} else {
+    alert(` вы наверное не правильно писали  "${userQuery}".`);
+} 
 
 
 

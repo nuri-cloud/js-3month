@@ -1,0 +1,34 @@
+button {
+    padding: 10px 20px;
+    background-color: rgb(127, 138, 255);
+    color: white;
+    border-radius: 12px;
+    cursor: pointer;
+    border: none;
+    font-size: 22px;
+}
+
+#count {
+    font-size: 24px;
+    font-weight: 900;
+}
+
+
+.div {
+    width: 300px;
+    height: 300px;
+    background-color: darkblue;
+    border-radius: 12px;
+    position: relative;
+}
+
+.div1 {
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    border-radius: 10px;
+    position: absolute;
+    top: 110px;
+    left: 110px;
+    transition: left 0.1s, top 0.1s; /* Добавим плавное перемещение */
+}
