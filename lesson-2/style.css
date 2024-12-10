@@ -30,5 +30,5 @@ button {
     position: absolute;
     top: 110px;
     left: 110px;
-    transition: left 0.1s, top 0.1s; /* Добавим плавное перемещение */
+    transition: left 0.1s, top 0.1s; /
 }
